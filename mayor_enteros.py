@@ -1,12 +1,16 @@
-#input
-N = int (input("Dame un numero: "))
-P = int (input("Dame el otro numero: "))
-if N>P: 
-    X = N
+# input
 
-else: 
-    X = P 
+X = int(input("X: "))
 
+Y = int(input("Y: "))
 
-
-print("El entero mayor es: " + str(X))
+# processing
+if X == Y:
+    # output
+    print("los numeros son iguales")
+else:
+    if X > Y:
+        mayor = X
+    else:
+            mayor = Y
+    print("el mayor entre: " + str(X) + " y " + str(Y) + " es " + str(mayor))
